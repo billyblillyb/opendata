@@ -4,7 +4,7 @@ var dataTotal = data.result.records.length;
 
 for (let i = 0; i < dataTotal; i++) {
     
-    if (data.result.records[i].item1.match("月") && data.result.records[i].value3 > 0) {
+    if (data.result.records[i].item1.match("月") && data.result.records[i].value3 > 0 && data.result.records[i].item2 != "總計") {
         console.log(data.result.records[i].item1+data.result.records[i].item2+'的自來水不合格率大於0，數值為'+data.result.records[i].value3)
     }
     
